@@ -11,7 +11,7 @@ namespace Задание_4
         static void Main()
         {
             int A;
-            int B;
+            //int B;
             int C;
             string D = "";
             Console.WriteLine("Введите натуральное число");
