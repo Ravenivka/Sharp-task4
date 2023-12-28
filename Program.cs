@@ -8,8 +8,19 @@ namespace Задание_4
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("Введите натуральное число");
+            string userInput= Console.ReadLine();
+            int number=Int32.Parse(userInput);
+            if (number < 1)
+            {
+                Console.WriteLine("Число не натуральное");
+            }
+            else
+            {
+                Console.WriteLine("oops");
+            }
         }
     }
 }
