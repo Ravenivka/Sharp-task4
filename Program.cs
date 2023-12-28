@@ -10,6 +10,10 @@ namespace Задание_4
     {
         static void Main()
         {
+            int A;
+            int B;
+            int C;
+            string D = "";
             Console.WriteLine("Введите натуральное число");
             string userInput= Console.ReadLine();
             int number=Int32.Parse(userInput);
@@ -19,7 +23,20 @@ namespace Задание_4
             }
             else
             {
-                Console.WriteLine("oops");
+                 C = number;
+                int razriadnost = userInput.Length;
+                int i = 0;
+                while (i < razriadnost)
+                {
+                    A = C % 10;
+                    C = C / 10;
+                    i = i + 1;
+                    D = A + ", "+D;
+                }
+                //D = D.TrimEnd(',');
+                D = D.Trim();
+                D = D.TrimEnd(',');
+                Console.WriteLine(D);
             }
         }
     }
